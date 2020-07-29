@@ -1,38 +1,409 @@
-.App {
-  text-align: center;
+/*Header css*/
+
+.HeaderDiv{
+  position: relative;
+  bottom: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Headerh1{
+  position: relative;
+  left: 50px;
+  color: #480091;
+  top: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.HeaderSettings{
+  position: relative;
+  bottom:40px;
+  left: 1375px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.HeaderSearch{
+  position: relative;
+  bottom:40px;
+  left: 1355px;
+}
+
+.HeaderLinks{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  position: relative;
+  left: 500px;
+  bottom: 50px;
+}
+
+.HomeIcon{
+  position: relative;
+  left: 72px;
+  bottom: 35px;
+}
+
+.HeaderHome{
+  display: inline;
+  position: relative;
+  left: 20px;
+  bottom: 15px;
+  color: #480091;
+}
+
+.ProfileIcon{
+  position: relative;
+  left: 93px;
+  bottom: 35px;
+}
+
+.HeaderAboutMe{
+  display: inline;
+  position: relative;
+  left:40px;
+  bottom: 15px;
+  color: #480091;
+}
+
+.SkillsIcon{
+  position: relative;
+  left: 108px;
+  bottom: 30px;
+}
+
+.HeaderSkills{
+  display:inline;
+  position: relative;
+  left: 60px;
+  bottom: 10px;
+  color: #480091;
+}
+
+.EducationIcon{
+  position: relative;
+  left: 152px;;
+  bottom: 35px;
+
+}
+
+.HeaderEducation{
+  display: inline;
+  position: relative;
+  left: 80px;
+  color: #480091;
+  bottom: 15px;
+}
+
+.CodeIcon{
+  position: relative;
+  left: 173px;
+  bottom: 35px;
+}
+
+.HeaderExperience{
+  display: inline;
+  position: relative;
+  left: 100px;
+  bottom:15px;
+  color: #480091;
+}
+
+/*Home CSS*/
+
+
+.IntroPage{
+  position: relative;
+  left: 450px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.IntroHeader{
+  position: relative;
+  left: 155px;
+  color: #480091;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.IntroParagraph{
+  position: relative;
+  top: 30px;
+}
+
+
+/*AboutMe CSS*/
+
+.AboutMePage{
+  position: relative;
+  left: 500px;
+  color: white;
+}
+
+.AboutMeHeader{
+  position: relative;
+  left: 155px;
+  color: black;
+}
+
+.MyInfoList{
+  position: relative;
+  left: 200px;
+}
+
+.ProfileSelfPic{
+  position: relative;
+  right: 130px;
+  bottom: 250px;
+  border-radius: 41%;
+}
+
+.ProfileLineV{
+  position: relative;
+  right: 850px;
+  bottom: 250px;
+}
+
+.FullNameHR{
+  position: relative;
+  right: 750px;
+  bottom: 615px;
+}
+
+.InfoFullName{
+  position: relative;
+  bottom: 700px;
+  left: 125px;
+}
+
+.AddressHR{
+  position: relative;
+  right: 750px;
+  bottom: 615px;
+}
+
+.InfoAddress{
+  position: relative;
+  bottom: 700px;
+  left: 125px;
+}
+
+.EmailHR{
+  position: relative;
+  right: 750px;
+  bottom: 615px;
+}
+
+.InfoEmail{
+  position: relative;
+  bottom: 700px;
+  left: 125px;
+}
+
+
+/*Skills CSS*/
+
+.SkillsPage{
+  position: relative;
+  left: 450px;
+  color: white;
+}
+
+.SkillsHeader{
+  position: relative;
+  left: 215px;
+
+}
+
+/*Education CSS*/
+
+.EducationPage{
+  position: relative;
+  left: 450px;
+  color: white;
+}
+
+.EducationHeader{
+  position: relative;
+  left: 155px;
+}
+
+/*Accordion CSS*/
+.AccordionPage{
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.accordion{
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  transition: backgound-color 0.6s ease;
+  height: 45px;
+  width: 450px;
+  position: relative;
+  align-self: center;
+}
+
+.accordion:hover,
+.active{
+  background-color: #ccc;
+}
+
+.AccordionTitle{
+font-weight: 600;
+font-size: 14px;
+}
+
+.accordion_icon{
+  margin-left: auto;
+  transition: transform 0.6n ease;
+}
+
+.AccordionText{
+  color: black;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.rotate{
+  transform:  rotate(90deg);
+}
+
+.AccordionContent{
+  background-color: white;
+  overflow: hidden;
+  transition: max-height 0.6s easeS;
+}
+
+.AccordionText{
+
+}
+
+/*Experience CSS */
+
+.ExperiencePage{
+  position: relative;
+  left: 450px;
+  color: white;
+}
+
+.ExperienceHeader{
+  position: relative;
+  left: 155px;
+  color: #480091;
+}
+
+.ULExperience{
+  position: relative;
+  list-style: none;
+  display: flex;
+  flex-flow: row;
+  right: 80px;
+  top: 125px;
+}
+
+.ImgAwardXP{
+  height: 75px;
+  width: 75px;
+}
+
+.AwardCaptionXP{
+  color: black;
+  position: relative;
+  left:10px;
+}
+
+.OneExperienceLine{
+  border: none;
+  height: 1px;
+  background-color: black;
+  width: 175px;
+  position: relative;
+  top:60px;
+  right:15px;
+}
+
+
+.ImgTajMahalXP{
+  height: 75px;
+  position: relative;
+  right: 5px;
+}
+
+.TajMahalCaptionXP{
+  color: black;
+  position: relative;
+}
+
+.TwoExperienceLine{
+  border: none;
+  height: 1px;
+  background-color: black;
+  width: 175px;
+  position: relative;
+  top: 60px;
+}
+
+.ImgBurgerXP{
+  height: 75px;
+  position: relative;
+}
+.BurgerCaptionXP{
+  color: black;
+  position: relative;
+}
+
+.AwardHideDiv{
+  position: relative;
+  bottom: 15px;
+  right: 25px;
+}
+
+.AHLI1{
+  position: relative;
+  right: 15px;
+  font-size: 11px;
+}
+
+.AHLI2{
+  position: relative;
+  right: 15px;
+  font-size: 11px;
+}
+
+.TajHideDiv{
+  position: relative;
+  bottom: 15px;
+  right: 25px;
+}
+
+.THLI1{
+  position: relative;
+  right: 15px;
+  font-size: 11px;
+}
+
+.THLI2{
+  position: relative;
+  right: 15px;
+  font-size: 11px;
+}
+
+.BurgerHideDiv{
+  position: relative;
+  bottom: 15px;
+  right: 25px;
+}
+
+.BHLI1{
+  position: relative;
+  right: 15px;
+  font-size: 11px;
+}
+
+.BHLI2{
+  position: relative;
+  right: 15px;
+  font-size: 11px;
 }
