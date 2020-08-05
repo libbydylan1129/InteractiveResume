@@ -1,108 +1,42 @@
 /*Header css*/
+.container{
+  width: 1536px;
+}
 
 .HeaderDiv{
   position: relative;
   bottom: 30px;
+  background-color: #6CC4BB;
+  width: 100%;
+  height: 100%;
 }
 
 .Headerh1{
   position: relative;
-  left: 50px;
   color: #480091;
-  top: 25px;
+  padding:1%;
+}
+
+.TopRightHeader{
 }
 
 .HeaderSettings{
-  position: relative;
-  bottom:40px;
-  left: 1375px;
 }
 
 .HeaderSearch{
   position: relative;
-  bottom:40px;
-  left: 1355px;
 }
 
 .HeaderLinks{
+  margin: auto;
+  text-align: center;
+  padding: 0px 50px;
+}
+
+.HeaderLinksUL{
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  list-style-type: none;
-  position: relative;
-  left: 500px;
-  bottom: 50px;
-}
-
-.HomeIcon{
-  position: relative;
-  left: 72px;
-  bottom: 35px;
-}
-
-.HeaderHome{
-  display: inline;
-  position: relative;
-  left: 20px;
-  bottom: 15px;
-  color: #480091;
-}
-
-.ProfileIcon{
-  position: relative;
-  left: 93px;
-  bottom: 35px;
-}
-
-.HeaderAboutMe{
-  display: inline;
-  position: relative;
-  left:40px;
-  bottom: 15px;
-  color: #480091;
-}
-
-.SkillsIcon{
-  position: relative;
-  left: 108px;
-  bottom: 30px;
-}
-
-.HeaderSkills{
-  display:inline;
-  position: relative;
-  left: 60px;
-  bottom: 10px;
-  color: #480091;
-}
-
-.EducationIcon{
-  position: relative;
-  left: 152px;;
-  bottom: 35px;
-
-}
-
-.HeaderEducation{
-  display: inline;
-  position: relative;
-  left: 80px;
-  color: #480091;
-  bottom: 15px;
-}
-
-.CodeIcon{
-  position: relative;
-  left: 173px;
-  bottom: 35px;
-}
-
-.HeaderExperience{
-  display: inline;
-  position: relative;
-  left: 100px;
-  bottom:15px;
-  color: #480091;
+  width: 50%;
+  margin: auto;
 }
 
 /*Home CSS*/
@@ -110,13 +44,14 @@
 
 .IntroPage{
   position: relative;
-  left: 450px;
+  margin: auto;
   color: white;
 }
 
 .IntroHeader{
   position: relative;
-  left: 155px;
+  width: 40%;
+  margin: auto;
   color: #480091;
 }
 
@@ -154,13 +89,13 @@
 
 .ProfileLineV{
   position: relative;
-  right: 850px;
+  right: 765px;
   bottom: 250px;
 }
 
 .FullNameHR{
   position: relative;
-  right: 750px;
+  right: 665px;
   bottom: 615px;
 }
 
@@ -172,7 +107,7 @@
 
 .AddressHR{
   position: relative;
-  right: 750px;
+  right: 665px;
   bottom: 615px;
 }
 
@@ -184,7 +119,7 @@
 
 .EmailHR{
   position: relative;
-  right: 750px;
+  right: 665px;
   bottom: 615px;
 }
 
@@ -198,15 +133,202 @@
 /*Skills CSS*/
 
 .SkillsPage{
-  position: relative;
-  left: 450px;
-  color: white;
+  text-align: center;
+margin: auto;
 }
 
-.SkillsHeader{
-  position: relative;
-  left: 215px;
+.AdditionalPage{
+position: relative;
+top: 100px;
+}
 
+
+/* SkillBar CSS*/
+
+.LevelUL{
+list-style-type: none;
+display: flex;
+position: relative;
+top: 50px;
+left:20px;
+}
+
+.LevelBeginner{
+  padding-right: 50px;
+  transform: rotate(45deg);
+
+}
+
+.LevelIntermediate{
+  padding-right: 50px;
+  transform: rotate(45deg);
+  position: relative;
+  top: 10px;
+}
+
+.LevelAdvanced{
+  padding-right: 50px;
+  transform: rotate(45deg);
+}
+
+.LevelExpert{
+  transform: rotate(45deg);
+  position: relative;
+  bottom: 20px;
+}
+
+
+
+.skillBarDiv{
+  width: 500px;
+  position: relative;
+  top: 25px;
+  color: black
+}
+
+.BarUl{
+  list-style-type: none;
+}
+.bar{
+  background: #353b48;
+  display: block;
+  height: 2px;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #2187e7b3;
+}
+
+.bar span{
+  height: 2px;
+  float: left;
+  background: #6CC4BB;
+}
+
+.BarHTML{
+  width: 70%;
+  animation: BarHTML 2s;
+}
+
+@keyframes BarHTML {
+  0%{
+    width: 0%
+  }
+  100%{
+    width: 70%
+  }
+}
+
+
+.BarCSS{
+  width: 70%;
+  animation: BarCSS 3s;
+}
+
+@keyframes BarCSS {
+  0%{
+    width: 0%
+  }
+  100%{
+    width: 70%
+  }
+}
+
+.BarJavaScript{
+  width: 70%;
+  animation: BarJavaScript 4s;
+}
+
+@keyframes BarJavaScript {
+  0%{
+    width: 0%
+  }
+  100%{
+    width: 70%
+  }
+}
+
+.BarReact{
+  width: 40%;
+  animation: BarReact 4s;
+}
+
+@keyframes BarReact{
+  0%{
+    width: 0%
+  }
+  100%{
+    width: 40%
+  }
+}
+
+.BarNode{
+width:  40%;
+animation: BarNode 4s;
+}
+
+@keyframes BarNode {
+  0%{
+    width: 0%
+  }
+  100%{
+    width: 40%
+  }
+}
+.BarMicroOffice{
+  width: 70%;
+  animation: BarMicroOffice 2s;
+}
+
+@keyframes BarMicroOffice  {
+  0%{
+    width:0%
+  }
+  100%{
+    width: 70%
+  }
+}
+
+.BarDraw{
+  width: 70%;
+  animation: BarDraw 2s
+}
+
+@keyframes BarDraw {
+  0%{
+    width:0%;
+  }
+  100%{
+    width: 70%;
+  }
+}
+
+.BarCastify{
+  width: 40%;
+  animation: BarCastify 2s
+}
+
+@keyframes BarCastify {
+  0%{
+    width:0%;
+  }
+  100%{
+    width: 40%;
+  }
+}
+
+.BarGit{
+  width: 70%;
+  animation: BarGit 2s
+}
+
+@keyframes BarGit {
+  0%{
+    width:0%
+  }
+  100%{
+    width: 70%
+  }
 }
 
 /*Education CSS*/
@@ -245,6 +367,8 @@
   align-self: center;
 }
 
+
+
 .accordion:hover,
 .active{
   background-color: #ccc;
@@ -276,134 +400,113 @@ font-size: 14px;
   transition: max-height 0.6s easeS;
 }
 
-.AccordionText{
-
-}
 
 /*Experience CSS */
 
+.TooltipIcon{
+  position: relative;
+}
+
 .ExperiencePage{
   position: relative;
-  left: 450px;
-  color: white;
+  left: 375px;
+  top: 150px;
 }
 
-.ExperienceHeader{
-  position: relative;
-  left: 155px;
-  color: #480091;
+.XPDiv{
+width: 600px;
+padding: 25px;
+display: flex;
+flex-direction: row;
 }
 
-.ULExperience{
-  position: relative;
-  list-style: none;
+.XPHeader{
   display: flex;
-  flex-flow: row;
-  right: 80px;
-  top: 125px;
+  position: relative;
+  bottom: 50px;
 }
 
-.ImgAwardXP{
+.XPDates{
+  display: flex;
+position: relative;
+bottom: 50px;
+}
+
+
+
+.Trophy{
+height: 75px;
+padding-left: 45px;
+}
+
+.Olympic{
+
+}
+.OlympicDates{
+  position: relative;
+  right:5px;
+}
+
+.TajM{
+height: 75px;
+position: relative;
+left: 135px;
+}
+
+.Gateway{
+  position: relative;
+  left: 75px;
+}
+
+.GatewayDates{
+  position: relative;
+  left: 60px;
+}
+
+.Burger{
+  position: relative;
+  left: 275px;
+  padding-right: 45px;
   height: 75px;
-  width: 75px;
 }
 
-.AwardCaptionXP{
-  color: black;
+.Jefe{
   position: relative;
-  left:10px;
+  left:  125px;
 }
 
-.OneExperienceLine{
-  border: none;
-  height: 1px;
-  background-color: black;
-  width: 175px;
+.JefeDates{
   position: relative;
-  top:60px;
-  right:15px;
+  left: 115px;
 }
 
 
-.ImgTajMahalXP{
-  height: 75px;
-  position: relative;
-  right: 5px;
+
+@media screen and (max-width:400px){
+  .HeaderDiv{
+    position: relative;
+    bottom: 30px;
+    width: 100%;
+    height: 50%;
+  }
+
+  .Headerh1{
+    position: relative;
+    color: #480091;
+    padding-top: 1%
+  }
+
+  .HeaderLinks{
+    height: 75%;
+    position: relative;
+    text-align: center;
+    right:400px;
+  }
+
+  .HeaderLinksUL{
+  }
+
+
 }
 
-.TajMahalCaptionXP{
-  color: black;
-  position: relative;
-}
-
-.TwoExperienceLine{
-  border: none;
-  height: 1px;
-  background-color: black;
-  width: 175px;
-  position: relative;
-  top: 60px;
-}
-
-.ImgBurgerXP{
-  height: 75px;
-  position: relative;
-}
-.BurgerCaptionXP{
-  color: black;
-  position: relative;
-}
-
-.AwardHideDiv{
-  position: relative;
-  bottom: 15px;
-  right: 25px;
-}
-
-.AHLI1{
-  position: relative;
-  right: 15px;
-  font-size: 11px;
-}
-
-.AHLI2{
-  position: relative;
-  right: 15px;
-  font-size: 11px;
-}
-
-.TajHideDiv{
-  position: relative;
-  bottom: 15px;
-  right: 25px;
-}
-
-.THLI1{
-  position: relative;
-  right: 15px;
-  font-size: 11px;
-}
-
-.THLI2{
-  position: relative;
-  right: 15px;
-  font-size: 11px;
-}
-
-.BurgerHideDiv{
-  position: relative;
-  bottom: 15px;
-  right: 25px;
-}
-
-.BHLI1{
-  position: relative;
-  right: 15px;
-  font-size: 11px;
-}
-
-.BHLI2{
-  position: relative;
-  right: 15px;
-  font-size: 11px;
-}
+@media only screen (min-width:400px) and (max-width: 600px;)

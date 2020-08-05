@@ -5,16 +5,19 @@ export default class AboutMe extends Component{
     return(
       <div className="AboutMePage">
       <h1 className="AboutMeHeader">Hello, I'm Dylan Libby</h1>
-      <ul style={{
+      <div style={{
         color: "black",
       }}
       className="MyInfoList">
-      <h3> Things About Me  </h3>
-      <li> <p> I like Music </p> </li>
-      <li> <p> My hobby is Skateboarding </p> </li>
-      <li> <p> Good with Time </p> </li>
-      <li> <p> I am friendly, good with coworkers </p> </li>
-      </ul>
+      <h3> Aspiring Developer</h3>
+      <p
+      style={{
+        width: "300px",
+      }}> I am 17 years old and have the goal of becoming a website developer.
+      I am good with coworkers, time managment, and being creative. I hope to get an
+      internship in order to expand my knowlage of coding.
+      </p>
+      </div>
       <ul>
       <li>
       <img src={require("../Images/puppyselfi.jpeg")} style={{
